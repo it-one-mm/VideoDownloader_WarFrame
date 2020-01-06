@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/downloader"
+        android:text="Downloader"
+        android:textColor="@color/colorAccent"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:fontFamily="@font/pacifo"/>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_link"
+            android:background="@color/colorWhite"
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Video Url"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColorHint="@color/colorAccent"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/colorAccent"
+            android:text="Enter"
+            android:textColor="@color/colorWhite" />
+
+
+
+    </LinearLayout>
+
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:layout_margin="10dp"
+        android:id="@+id/small_template"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:gnt_template_type="@layout/gnt_small_template_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.ads.nativetemplates.TemplateView
+        android:layout_margin="10dp"
+        android:id="@+id/medium_template"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:gnt_template_type="@layout/gnt_medium_template_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
